@@ -7,6 +7,26 @@
 <meta name="description" content="Free, confidential support services for anyone in Bournemouth, Christchurch and Poole affected by crime, harassment, sexual violence or domestic abuse.">
 <meta name="theme-color" content="#361e54">
 <meta name="format-detection" content="telephone=no">
+/* ---- Desktop / tablet layout (phones unchanged) ---- */
+  @media (min-width: 900px) {
+    html { scroll-padding-top:140px; }
+    .app-shell { max-width:1180px; box-shadow:0 0 0 1px var(--line); }
+    .bar { padding:12px 32px; }
+    .bar img { height:40px; }
+    .intro { padding:36px 32px 30px; display:grid; grid-template-columns:1.3fr 1fr; column-gap:40px; align-items:center; }
+    .intro h1 { font-size:36px; grid-column:1; }
+    .intro p { grid-column:1; font-size:17px; margin-bottom:0; }
+    .intro .sos { grid-column:2; grid-row:1 / span 2; padding:20px 26px; }
+    .intro .tips { grid-column:1 / -1; grid-template-columns:1fr 1fr; margin-top:22px; }
+    .filters { top:65px; }
+    .filters .scroll { flex-wrap:wrap; overflow:visible; padding:0 32px; }
+    .count { margin:10px 32px 0; }
+    h2 { margin:36px 32px 14px; font-size:24px; }
+    .list { grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:18px; padding:18px 32px 0; align-items:start; }
+    .note, .online { margin-left:32px; margin-right:32px; }
+    .call:hover { background:var(--brand-d); }
+    .chip:hover { border-color:var(--brand); }
+  }
 <style>
   :root { --brand:#361e54; --brand-d:#2a1742; --ink:#1f1f22; --ink2:#46464b; --ink3:#616166; --line:#e6e2ec; --bg:#f3f1f6; }
   * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
